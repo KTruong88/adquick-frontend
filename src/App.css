@@ -2,3 +2,12 @@
   color: #44ac6b;
   font-weight: 600;
 }
+
+.billboard-title {
+  text-align: center;
+}
+
+.billboard-list {
+  display: flex;
+  flex-direction: column;
+}
