@@ -1,13 +1,36 @@
+/* Navbar Component */
+
+
 .phone {
   color: #44ac6b;
   font-weight: 600;
 }
 
-.billboard-title {
-  text-align: center;
-}
 
-.billboard-list {
+/* Billboards Component */
+
+
+.wrapper {
   display: flex;
   flex-direction: column;
+  padding: 0 10%;
+}
+
+.billboard-title {
+  height: 80px;
+  text-align: center;
+  border-bottom: 2px solid #44ac6b;
+}
+
+.billboard-word {
+  color: #44ac6b;
+}
+
+.list-item {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.billboard-image {
+  border-radius: 8px;
 }
