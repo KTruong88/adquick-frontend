@@ -27,6 +27,7 @@ class ApiCall extends React.Component {
 
   render() {
     const { value } = this.state
+    
     return (
       <div>
         <button onClick={() => this.callApi()}>
@@ -35,8 +36,7 @@ class ApiCall extends React.Component {
         <div>
           Title: { value.title } <br />
           UserId: { value.userId } <br />
-          Id: { value.id } <br />
-          Body: { value.body }
+          Image: { value.image }
         </div>
       </div>
     )

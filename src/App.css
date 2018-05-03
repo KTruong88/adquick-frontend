@@ -35,10 +35,14 @@
   border-radius: 8px;
 }
 
-
 /* VotingButtons */
 
 
 .count {
   margin: 5px 10px;
+}
+
+.votes {
+  margin-top: 10%;
+  margin-bottom: -13%;
 }

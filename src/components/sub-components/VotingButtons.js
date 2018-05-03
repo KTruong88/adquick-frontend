@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, Row, Modal } from 'react-bootstrap'
 
 class VotingButtons extends Component {
   constructor(props) {
@@ -16,6 +16,7 @@ class VotingButtons extends Component {
     this.setState({
       count: upVote
     })
+    this.message()
   }
 
   downVote() {
@@ -25,17 +26,22 @@ class VotingButtons extends Component {
     this.setState({
       count: downVote
     })
+    this.message()
+  }
+
+  message() {
+    alert("We have received your vote. Thank you!")
   }
 
   render() {
     const { count } = this.state
 
     return (
-      <div>
+      <Row className="votes">
         <Button bsStyle="success" onClick={() => this.upVote()}>▲</Button>
         <strong className="count">{count}</strong>
         <Button bsStyle="danger" onClick={() => this.downVote()}>▼</Button>
-      </div>
+      </Row>
     )
   }
 }
