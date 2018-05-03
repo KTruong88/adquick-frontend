@@ -34,3 +34,11 @@
 .billboard-image {
   border-radius: 8px;
 }
+
+
+/* VotingButtons */
+
+
+.count {
+  margin: 5px 10px;
+}
